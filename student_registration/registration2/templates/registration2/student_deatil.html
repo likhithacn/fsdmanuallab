@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <p><strong>Name:</strong> {{ student.first_name }} {{ student.last_name }}</p>
+    <p><strong>Email:</strong> {{ student.email }}</p>
+    <h3>Project Details</h3>
+    <p><strong>Topic:</strong> {{ student.project.topic }}</p>
+    <p><strong>Languages Used:</strong> {{ student.project.languages_used }}</p>
+    <p><strong>Duration:</strong> {{ student.project.duration }}</p>
+</body>
+</html>

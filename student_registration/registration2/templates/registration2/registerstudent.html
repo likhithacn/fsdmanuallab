@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Student and Project</title>
+</head>
+<body>
+    <h2>Register Student and Project</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <label for="id_topic">Project Topic:</label>
+        <input type="text" id="id_topic" name="topic" maxlength="200" required><br><br>
+        <label for="id_languages_used">Languages Used:</label>
+        <input type="text" id="id_languages_used" name="languages_used" maxlength="200" required><br><br>
+        <label for="id_duration">Duration:</label>
+        <input type="text" id="id_duration" name="duration" maxlength="50" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
